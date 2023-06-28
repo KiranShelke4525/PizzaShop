@@ -1,0 +1,20 @@
+{%extends "homepage.html" %}
+
+{%block content%}
+<h1>Sign Up Page!!</h1>
+<form method="post">
+    {%csrf_token%}
+<table class="table">
+    <tr><td><h3>Enter LoginId</h3></td>
+    <td><input type="text" name="uname" class="form-control" required/></td></tr>
+    <tr><td><h3>Enter Password</h3></td>
+    <td><input type="Password" name="password" class="form-control" required/></td></tr>
+    <tr><td><h3>Enter EMail Id</h3></td>
+    <td><input type="email" name="email" class="form-control" required/></td></tr>
+    <tr>
+        <td><center><button type="submit" class="btn btn-success" >Sign up</button></center></td>
+    </tr> 
+</table>
+</form>
+
+{%endblock%}
