@@ -1,0 +1,25 @@
+{%extends "homepage.html" %}
+
+{%block content%}
+{% if messages %}
+  {% for message in messages %}
+<div class="alert alert-success alert-dismissible">  
+    <a href="#" class="close" data-dismiss="alert" id="myalert" aria-label="close">&times;</a>
+    <strong>{{ message }}</strong>
+  </div>
+  {%endfor%}
+{%endif%}
+<h1>Login Page!!</h1>
+<form method="post">
+    {%csrf_token%}
+<table class="table">
+    <tr><td>LoginId</td>
+    <td><input type="text" name="uname" class="form-control" required/></td></tr>
+    <tr><td>Password</td>
+        <td><input type="password" name="password" class="form-control" required/></td></tr>
+        <tr>
+<td><button type="submit" class="btn btn-success">Login</button></td>
+</tr>
+</table>
+</form>
+{%endblock%}

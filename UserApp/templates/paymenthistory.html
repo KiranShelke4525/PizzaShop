@@ -1,0 +1,19 @@
+{% extends "homepage.html" %} {% block content %}
+<h1>Payment History</h1>
+<table class="table">
+  <tr>
+    <th>Date</th>
+    <th>Amount</th>
+    <th>Order ID</th>
+    <th>Payment Method</th>
+  </tr>
+  {% for payment in payment_history %}
+  <tr>
+    <td>{{ payment.dateOfOrder }}</td>
+    <td>{{ payment.amount }}</td>
+    <td>{{ payment.id }}</td>
+    <td>{{ payment.details }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
