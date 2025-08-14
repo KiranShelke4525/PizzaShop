@@ -52,6 +52,7 @@ future==0.18.3
 graphtools==1.5.3
 gunicorn==20.1.0
 h11==0.16.0
+htmlmin==0.1.12
 heroku==0.1.4
 httpcore==1.0.9
 httpx==0.28.1
@@ -177,4 +178,5 @@ wordcount==1.0
 wrapt==1.15.0
 ydata-profiling==4.5.0
 zope.interface==7.2
+
 
